@@ -24,7 +24,8 @@
       "-/*": ["./*"],
       "s/*": ["./src/styles/*"],
       "c/*": ["./src/components/*"],
-      "p/*": ["./public/*"]
+      "p/*": ["./public/*"],
+      "h/*": ["./src/hooks/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
