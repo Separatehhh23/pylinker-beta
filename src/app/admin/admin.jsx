@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import { useAuthContext } from "@/context/AuthContext";
+import { useAuthContext } from "@/context/authContext";
 import { useRouter } from "next/navigation";
 function AdminPage() {
     const { user } = useAuthContext()
