@@ -11,7 +11,7 @@ $g2: rgb(236, 64, 122);
     }
 }
 
-.container {
+.gradient {
     animation: background-pan 10s linear infinite;
     background: linear-gradient(
         to right,
@@ -20,28 +20,20 @@ $g2: rgb(236, 64, 122);
         $g1
     );
     background-size: 200%;
-}
 
-#tiles {
     height: 100vh;
     width: 100vw;
 
+    margin: 0;
+    padding: 0;
+}
+
+.tiles {
     display: grid;
-    grid-template-columns: repeat(var(--columns), 1fr);
-    grid-template-rows: repeat(var(--rows), 1fr);
+    grid-template-columns: repeat(10fr);
+    grid-template-rows: repeat(10fr);
 }
 
 .tile {
-    position: relative;
-
-    &:before {
-        background-color: rgb(20, 20, 20);
-        content: "";
-        position: absolute;
-        inset: 0.5px;
-    }
-
-    &:hover {
-        opacity: 0.95;
-    }
+    outline: 1px solid white;
 }

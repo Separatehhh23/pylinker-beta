@@ -1,6 +1,5 @@
-import React from 'react';
 import NavBar, { DropdownMenu, NavItem } from 'c/NavBar';
-import Background from 'c/background';
+import Background from 'c/Background';
 
 import { IoMdAdd, IoMdArrowDropdown, IoMdChatbubbles, IoMdNotificationsOutline } from 'react-icons/io';
 
@@ -11,11 +10,8 @@ function App() {
                 <NavItem icon={<IoMdNotificationsOutline />} />
                 <NavItem icon={<IoMdAdd />} />
                 <NavItem icon={<IoMdChatbubbles />} />
-
                 <NavItem icon={<IoMdArrowDropdown />}>
-                    
                     <DropdownMenu />
-
                 </NavItem>
             </NavBar>
 
